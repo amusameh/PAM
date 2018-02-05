@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	const body = document.querySelector('body');
 	const form = document.getElementById('sizePicker');
 	const table = document.getElementById('pixelCanvas');
-	const canvas = document.getElementById('shit');
 	const tableHtml = JSON.parse(localStorage.getItem('savedTable'));
 
 
@@ -141,16 +140,15 @@ document.addEventListener('DOMContentLoaded', () => {
 /* =============================================================== */
 /* ================== Next featurs =============================== */
 /* =============================================================== */
-$("#instructions").click(function(event){
+
+$("#instructions").click(function(){
 	//Show the overlay.
 	$('#overlay').show();
-  });
+});
   
-  //When overlay is clicked
-  $('#overlay').click(function(){
-	//Hide the overlay
+$('#overlay').click(function(){
 	$('#overlay').hide();
-  });
+});
 
 
 // save and restore buttons 
@@ -172,9 +170,5 @@ $("#instructions").click(function(event){
 	});
 
 */
-
-
-
-
 
 }); // Last line closing the DOMContentLoaded
