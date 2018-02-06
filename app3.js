@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function addHtml() {
 		table.innerHTML = tableHtml;
-		console.log(table.innerHTML)
 	}
 
 	addHtml();
@@ -70,9 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// color the canvas background
 	const gridBackground = document.querySelector('#gridBackground');
-	gridBackground.addEventListener('click', (e) => {
+	gridBackground.addEventListener('click', () => {
 		const color = document.getElementById('colorPicker').value;
 		tbody.style.backgroundColor = color;
+		table.style.backgroundColor = color;
 		saveToStorage();
 	});
 
